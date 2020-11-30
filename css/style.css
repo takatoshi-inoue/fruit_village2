@@ -1,0 +1,269 @@
+@import url(sanitize.css);
+
+
+
+.container {
+  width:100%;
+}
+
+.headerContainer {
+  display: flex;
+  flex: 1;
+  height: 100px;
+  box-shadow: 0 1px 0 rgba(4,0,0,0.1);
+  font-family: cursive;
+  color: #1b1223a6;
+}
+
+.logo {
+  
+  width: 200px;
+}
+
+.imgLogo {
+  width: 200px;
+  height: 100px;
+}
+
+.time {
+  flex: 1;
+}
+
+.todayContaier {
+  /* flex: 1; */
+  font-size: 200%;
+  margin-right:10px;
+  color: #6062a2;
+  margin-left: 150px;
+}
+
+.todayContaier p {
+  margin: 0px;
+  width: 200px;
+}
+
+.timeContainer {
+  /* text-align: center; */
+  margin: 10px auto;
+  width:600px;
+  color: #6062a2;
+  display: flex;
+}
+
+.menu1 {
+  width: 200px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+
+.mainPhoto {
+  margin-top: 5px;
+}
+
+#timer {
+  font-size: 20px;
+}
+
+
+.imgMain {
+  height: 460px;
+  width:100%;
+}
+
+.news {
+  height: 100px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center
+}
+.fa-lemon {
+  color: #fcb602;
+}
+.mainNews {
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+
+.sabNews{
+  margin-left: 5px;
+}
+
+.tocip {
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 50px;
+  font-size: 21px;
+  box-shadow: 0 1px 0 rgba(6,0,0,0.1);
+}
+
+
+.tocipBox {
+  height: 800px;
+  margin: 0px 60px 10px 60px;
+  overflow: scroll;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.photoBox {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.photo {
+  margin: 10px 10px 10px 0px;
+  width: 230px;
+  height: 330px;
+}
+.photoDate {
+  width: 230px;
+  height: 130px;
+}
+.tocipImg {
+  width: 230px;
+  height: 130px;
+}
+.photoComents {
+  margin-top: 20px;
+  height: 110px;
+}
+.photoDay {
+  margin-top: 20px;
+}
+
+.anderImg {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px;
+}
+.charamesage {
+  position: relative;
+  top: 50px;
+  font-size: 15px;
+  padding-left: 3px;
+  color: #01a7c3;
+  font-family: monospace;
+}
+.logoImgAnder {
+  width: 150px;
+  height: 150px;
+}
+
+.footerContainer {
+  background-color: black;
+}
+
+
+
+
+.iphoneType {
+  display: none;
+}
+.imgMain2 {
+  display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width:100%;
+  }
+  .logo {
+    width: 100px;
+  }
+  .timeContainer {
+    width: 70px;
+  }
+  .todayContaier {
+    width: 100px;
+    font-size: 16px;
+    margin: 30px 0px 0px 0px;
+  }
+  
+  .imgLogo {
+    width: 90px;
+  }
+
+  .timeContainer {
+    
+    width:180px;
+    color: #6062a2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeContainer p {
+    font-size: 10px;
+    width: 100px;
+  }
+  .menu1 {
+    width: 220px;
+    line-height: 7px;
+    font-size: 20px;
+  }
+
+  .charamesage {
+    position: relative;
+    top: 10px;
+    font-size: 8px;
+    padding-left: 3px;
+    color: #01a7c3;
+    font-family: monospace;
+    display: none;
+  }
+  .logoImgAnder {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom:0px;
+    
+  }
+  
+  .todayContaier p {
+    margin-right: 6px;
+      width: 80px;
+    text-align: center;
+  }
+  .mainNews {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  .news {
+    height: 50px;
+  }
+  .sabNews {
+    font-size: 12px;
+  }
+  .fa-lemon {
+    font-size: 5px;
+  }
+
+  .iphoneType {
+    display:inline-block;
+    position: relative;
+    color: #01a7c3;
+    font-family: monospace;
+    left: 55px;
+    top: -35px;
+    font-size: 8px;
+  }
+  .photoComents {
+    font-size: 12px;
+  }
+  .imgMain {
+    display: none;
+  }
+  .imgMain2 {
+    display: block;
+    width: 100%;
+  }
+}

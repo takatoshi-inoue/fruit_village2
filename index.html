@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+<link rel="stylesheet" href="css/style.css">
+<title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="headerContainer">
+        <div class="logo">
+          <img src="img/りんごロゴ.jpg" alt="ロゴ" class="imgLogo">
+        </div>
+        <div class="timeContainer">
+          <p class="menu1">会社情報</p>
+          <p class="menu1">旬なフルーツ</p>
+          <p class="menu1">果物の里について</p>
+          <!-- <p id="timer">00:00:00</p> -->
+          <!-- <div>
+            <button id="start_stop" class="btn btn-lg btn-primary">START</button>
+          </div> -->
+        </div>
+        <div class="todayContaier">
+          <script>
+            const today = new Date();
+            const todayHtml = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+            document.write('<p class="date">' + todayHtml + '</p>');
+          </script>
+          
+          <div>
+            <p id="todayDate">00:00:00</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainContainer">
+        <div class="mainPhoto">
+          <img src="img/メインバナナ2.jpg" alt="メイン画像" class="imgMain">
+          <img src="img/メインバナナ2.jpg" alt="メイン画像" class="imgMain2">
+        </div>
+        <div class="news">
+          <div class="mainNews">お知らせ</div>
+          
+          <i class="fas fa-lemon"></i>
+          <div class="sabNews">果物の里がリニューアルしました</div>  
+        </div>
+        <div class="tocip">トピックス</div>
+        <div class="tocipBox">
+          <ul class="photoBox">
+            <li class="photo">
+              <div class="photoDate">
+                <img src="img/りんご.jpg" alt="トピック画像" class="tocipImg">
+              </div>
+              <div class="photoComents">
+                <div>りんごには血中の悪玉コレステロールを40％も減らすことができます。</div>
+              </div>
+              <div class="photoDay">2020/11/30</div>
+            </li>
+            <li class="photo">
+              <div class="photoDate">
+                <img src="img/メロン.jpg" alt="トピック画像" class="tocipImg">
+              </div>
+              <div class="photoComents">
+                <div>メロンにはとても水分量が多くて、１００ｇあたり４２kcalと果物類の中でも比較的低カロリーな食材です。</div>
+              </div>
+              <div class="photoDay">2020/10/10</div>
+            </li>
+            <li class="photo">
+              <div class="photoDate">
+                <img src="img/キウイ.jpg" alt="トピック画像" class="tocipImg">
+              </div>
+              <div class="photoComents">
+                <div>キウイには腸内環境を整える食物繊維や、塩分の排出を促すカリウムなど、健康や美容に必要な栄養素がぎっしり詰まっています。</div>
+              </div>
+              <div class="photoDay">2020/10/03</div>
+            </li>
+            <li class="photo">
+              <div class="photoDate">
+                <img src="img/オレンジ.jpg" alt="トピック画像" class="tocipImg">
+              </div>
+              <div class="photoComents">
+                <div>オレンジには粘膜を保護し、肌の調子を整え、免疫力を上げるビタミンCが多く含まれています。</div>
+              </div>
+              <div class="photoDay">2020/08/20</div>
+            </li>
+            <li class="photo">
+              <div class="photoDate">
+                <img src="img/banana1.jpg" alt="トピック画像" class="tocipImg">
+              </div>
+              <div class="photoComents">
+                <div>バナナには、でんぷん、ブドウ糖、果糖、ショ糖などが含まれていて、それぞれ体内に吸収される時間が異なり、エネルギー補給が長時間持続するのです。</div>
+              </div>
+              <div class="photoDay">2020/08/11</div>
+            </li>
+          </ul>
+        </div>  
+        <div class="anderImg">
+          <div>
+            <p class="iphoneType">welcome</p>
+            <p class="charamesage">果物の里にようこそ！</p>
+            <img src="img/かわいいレモン-フルーツ漫画キャラクター-アイコンかわいいフラット-デザイン-イラスト.jpg" alt="このサイトのロゴ固定" class="logoImgAnder">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div>ここがフッターメッセージ</div>
+      </div>
+    </footer>
+
+
+    <script>
+      //0を追加する
+      let addZero = function(value) {
+        if (value < 10) {
+          value = '0' + value;
+        }
+        return value;
+      }
+      
+      statTimeToday = function () {
+        const now = new Date();
+        let seconds = now.getSeconds();  //秒を取得
+        seconds = addZero(seconds);
+        
+        let minutes = now.getMinutes();  //分を取得
+        minutes = addZero(minutes);
+
+        let hours = now.getHours();  //時を取得
+        hours = addZero(hours);
+        
+        document.getElementById('todayDate').innerHTML = hours + ':' + minutes + ':' + seconds;
+      }
+
+      setInterval(statTimeToday, 10);  //statTimeTodayを1/100秒事に実行
+
+
+
+        // タイマー  ↓
+        let start
+        //1970年1月1日00時00分00秒からの経過している時間
+        document.getElementById('start_stop').addEventListener('click', function() {
+          start = new Date();
+          // document.getElementById('timer').innerHTML = start.getTime();
+          // start.getTime();
+          setInterval(goTimer, 10);
+        });
+
+        let goTimer = function() {
+          let now = new Date();
+
+          let milli = now.getTime() - start.getTime();
+          let seconds = Math.floor(milli / 1000);
+          document.getElementById('timer').innerHTML = seconds;
+        }
+
+      // document.getElementById('start_stop').addEventListener('mousemove', 
+      // function() {
+      //   const now = new Date();
+      //   let seconds = now.getSeconds();  //秒を取得
+      //   seconds = addZero(seconds);
+      
+      //   let minutes = now.getMinutes();  //分を取得
+      //   minutes = addZero(minutes);
+
+      //   let hours = now.getHours();  //時を取得
+      //   hours = addZero(hours);
+
+      //   document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+      // })
+
+      
+      
+      
+      
+    </script>
+
+  </body>
+</div>  
+</html>
+
